@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../styles/Header.css";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +15,11 @@ function Header() {
       <div className="logo">SA</div>
 
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        {/* <a href="/blog">Blog</a> */} 
-        <a href="/project">Project</a>
-        <a href="/contact">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        {/* <Link to="/blog">Blog</Link> */}
+        <Link to="/project">Project</Link>
+        <Link to="/contact">Contact</Link>
       </div>
 
       <div className="social-icons">
