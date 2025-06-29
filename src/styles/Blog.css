@@ -1,0 +1,195 @@
+.blog-page {
+  padding: 80px 20px;
+  background-color: #fdfdfd;
+  min-height: 70vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.blog-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* -------- Blog Card Styles -------- */
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* -------- Blog Image -------- */
+.blog-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------- Blog Date -------- */
+.blog-date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #e84c88;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 265px;
+}
+
+.blog-date span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+}
+
+.blog-date small {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* -------- Blog Content -------- */
+.blog-content {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.blog-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.blog-content p {
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Global Anchor */
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ✅ RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .blog-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-image {
+    height: 300px;
+  }
+
+  .blog-date {
+    margin-top: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-heading {
+    font-size: 2rem;
+  }
+
+  .blog-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-image {
+    height: 250px;
+  }
+
+  .blog-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .blog-content p {
+    font-size: 0.9rem;
+  }
+
+  .blog-date {
+    margin-top: 180px;
+    font-size: 12px;
+  }
+
+  .blog-date span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-heading {
+    font-size: 1.8rem;
+  }
+
+  .blog-content {
+    padding: 15px;
+  }
+
+  .blog-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .blog-content p {
+    font-size: 0.85rem;
+  }
+
+  .blog-date {
+    margin-top: 160px;
+    padding: 6px 10px;
+  }
+
+  .blog-date span {
+    font-size: 1rem;
+  }
+
+  .blog-date small {
+    font-size: 0.8rem;
+  }
+}
