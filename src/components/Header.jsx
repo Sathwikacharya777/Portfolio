@@ -16,10 +16,9 @@ function Header() {
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <a href="/">Home</a>
         <a href="/about">About</a>
-        {/* <a href="/blog">Blog</a> */}
+        {/* <a href="/blog">Blog</a> */} 
         <a href="/project">Project</a>
         <a href="/contact">Contact</a>
-        
       </div>
 
       <div className="social-icons">
