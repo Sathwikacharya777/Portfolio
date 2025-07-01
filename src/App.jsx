@@ -8,10 +8,12 @@ import P from "./pages/p";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <main className="pt-20">
         <Routes>
