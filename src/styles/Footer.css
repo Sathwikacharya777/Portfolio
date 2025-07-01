@@ -79,37 +79,66 @@
 /* ✅ Responsive Breakpoints */
 @media (max-width: 992px) {
   .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 30px 20px;
   }
 
   .footer-column {
-    width: 100%;
+    width: 48%; /* Two columns side by side */
     margin-bottom: 30px;
   }
 
   .footer-divider {
-    display: none; /* Remove vertical line on smaller devices */
+    display: none; /* Remove divider on smaller screens */
   }
 
   .footer-social-links {
-    justify-content: flex-start;
+    justify-content: center; /* Optional: center icons */
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px 15px;
   }
 
-  .footer-column h3 {
-    font-size: 1.1rem;
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
   }
 
   .footer-social-links {
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .footer-social-links a {
@@ -117,6 +146,8 @@
   }
 
   .footer-bottom {
+    text-align: center;
     font-size: 12px;
+    margin-top: 10px;
   }
 }

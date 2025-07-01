@@ -9,20 +9,20 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header className="main-header">
       <div className="logo">SA</div>
 
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        {/* <Link to="/blog">Blog</Link> */}
-        <Link to="/project">Project</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/about" onClick={closeMenu}>About</Link>
+        <Link to="/project" onClick={closeMenu}>Project</Link>
+        <Link to="/contact" onClick={closeMenu}>Contact</Link>
       </div>
 
-      <div className="social-icons">
+      <div className={`social-icons ${isMenuOpen ? "visible" : ""}`}>
         <a href="https://github.com/Sathwikacharya777"><FaGithub /></a>
         <a href="https://www.linkedin.com/in/sathwika-acharya-ijjub13"><FaLinkedin /></a>
         <a href="https://www.instagram.com/_7_.wik._?igsh=MWU5MzNjd29jNGw5cA=="><FaInstagram /></a>
