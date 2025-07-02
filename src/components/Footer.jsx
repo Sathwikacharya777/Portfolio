@@ -26,6 +26,9 @@ function Footer() {
           <p>{name}<br/> Neelavara  <br />Udupi, India</p><br/>
           <h3>Find Me On</h3>
           <div className="footer-social-links">
+          <a href="mailto:sathwikacharyaofficial@gmail.com?subject=Hello%20Sathwik&body=I%20saw%20your%20portfolio%20and%20wanted%20to%20connect." target="_blank" rel="noreferrer">
+            <i className="fa fa-envelope"></i>
+          </a>  
           <a href="https://www.linkedin.com/in/sathwika-acharya-ijjub13" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>

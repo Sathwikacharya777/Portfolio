@@ -13,7 +13,9 @@ function Header() {
 
   return (
     <header className="main-header">
-      <div className="logo">SA</div>
+      <div className="logo">
+        <img src="/assets/logo.png" alt="Logo" className="logo-img" />
+      </div>
 
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={closeMenu}>Home</Link>

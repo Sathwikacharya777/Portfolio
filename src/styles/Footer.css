@@ -95,7 +95,7 @@
   }
 
   .footer-social-links {
-    justify-content: center; /* Optional: center icons */
+    justify-content: left; /* Optional: center icons */
     flex-wrap: wrap;
     gap: 10px;
   }

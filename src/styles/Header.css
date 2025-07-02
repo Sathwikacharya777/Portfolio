@@ -9,9 +9,12 @@
   position: relative;
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
+.logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  margin-top: -15px;
+  margin-bottom: -15px;
 }
 
 /* Nav Links */
@@ -69,11 +72,10 @@
   }
 
   .social-icons {
-    display: none;
-    flex-direction: row;
+    display: flex;
+    gap: 15px;
     justify-content: center;
-    width: 100%;
-    margin-top: 10px;
+    align-items: center;
   }
 
   .social-icons.visible {
