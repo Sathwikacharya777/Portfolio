@@ -20,7 +20,15 @@ const initialState = [
   },
   {
     id: 3,
-    role: "Student",
+    role: "GenAI Powered Data Analytics",
+    company: "Tata iQ (via Forage)",
+    period: "July 2025 - Completed",
+    logo: "/assets/tataiq.png",
+    link: "https://drive.google.com/file/d/1e9X0QaVHdXPjBnh3JIaGhHh75OfhT4HT/view?usp=drive_link"
+  },
+  {
+    id: 4,
+    role: "Flutter For Beginners Course",
     company: "Great Learning",
     period: "Mar 2025 - May 2025",
     logo: "/assets/gr.png",
