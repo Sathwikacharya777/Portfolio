@@ -61,7 +61,7 @@ function About() {
             I’m currently completing my Master’s in Computer Applications while gaining real-time experience through internships. I strive to deliver professional-quality results, whether it's a dynamic portfolio website or a data-driven medical application, and I'm excited to contribute to meaningful projects in the tech industry.
           </p>
         <a
-          href="https://drive.google.com/file/d/16osJ4ppsb_4Q3mUYvCphJqpQVZtW7rIv/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1PNDBF9E0kvvKd3KQTrnvArPYVoY_0CTs/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="download-cv-btn"
