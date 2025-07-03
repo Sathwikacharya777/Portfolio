@@ -75,7 +75,7 @@
   }
 
   .social-icons {
-    display: flex;
+    display: none;
     gap: 15px;
     justify-content: center;
     align-items: center;
