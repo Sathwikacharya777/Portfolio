@@ -1,47 +1,147 @@
-// File: src/components/Header.jsx
 import React, { useState } from "react";
 import "../styles/Header.css";
 import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const toggleMenu = () => setIsMenuOpen(prev => !prev);
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="main-header">
+    <motion.header
+      className="main-header"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      whileHover={{ boxShadow: "0 4px 20px rgba(255,255,255,0.1)" }}
+    >
       <div className="logo">
-        <img src="/assets/logo.png" alt="Logo" className="logo-img" />
+        <motion.img
+          src="/assets/logo.png"
+          alt="Logo"
+          className="logo-img"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        />
       </div>
 
-      <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <Link to="/" onClick={closeMenu}>Home</Link>
-        <Link to="/about" onClick={closeMenu}>About</Link>
-        <Link to="/project" onClick={closeMenu}>Project</Link>
-        <Link to="/contact" onClick={closeMenu}>Contact</Link>
-      </nav>
+      <motion.nav
+        className={`nav-links ${isMenuOpen ? "open" : ""}`}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        {[
+          { path: "/", label: "Home" },
+          { path: "/about", label: "About" },
+          // { path: "/blog", label: "Blog" },
+          { path: "/project", label: "Project" },
+          { path: "/contact", label: "Contact" },
+        ].map(({ path, label }) => (
+          <motion.div
+            key={path}
+            whileHover={{ scale: 1.1, color: "#ddd" }}
+            transition={{ duration: 0.3 }}
+          >
+            <Link to={path} onClick={closeMenu}>{label}</Link>
+          </motion.div>
+        ))}
 
-      <div className={`social-icons ${isMenuOpen ? "visible" : ""}`}>
-        <a
-          href="mailto:sathwikacharyaofficial@gmail.com?subject=Hello%20Sathwik&body=I%20saw%20your%20portfolio%20and%20wanted%20to%20connect."
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Send Email"
+        {/* 🔽 Mobile Social Icons with motion already handled */}
+        <motion.div
+          className="social-icons-mobile"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isMenuOpen ? 1 : 0 }}
+          transition={{ delay: 0.5 }}
         >
-          <FaEnvelope />
-        </a>
-        <a href="https://github.com/Sathwikacharya777" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-        <a href="https://www.linkedin.com/in/sathwika-acharya-ijjub13" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://www.instagram.com/_7_.wik._" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-      </div>
+          {[
+            {
+              href: "mailto:sathwikacharyaofficial@gmail.com",
+              icon: <FaEnvelope />,
+            },
+            {
+              href: "https://github.com/Sathwikacharya777",
+              icon: <FaGithub />,
+            },
+            {
+              href: "https://www.linkedin.com/in/sathwika-acharya-ijjub13",
+              icon: <FaLinkedin />,
+            },
+            {
+              href: "https://www.instagram.com/_7_.wik._",
+              icon: <FaInstagram />,
+            },
+          ].map(({ href, icon }, index) => (
+            <motion.a
+              key={index}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2, rotate: 5, color: "#ddd" }}
+              transition={{ duration: 0.3 }}
+              style={{ margin: "0 10px" }}
+            >
+              {icon}
+            </motion.a>
+          ))}
+        </motion.div>
+      </motion.nav>
 
-      <div className="hamburger" onClick={toggleMenu}>
-        <GiHamburgerMenu />
-      </div>
-    </header>
+
+      <motion.div
+        className="social-icons-desktop"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+      >
+        {[
+          {
+            href: "mailto:sathwikacharyaofficial@gmail.com",
+            icon: <FaEnvelope />,
+          },
+          {
+            href: "https://github.com/Sathwikacharya777",
+            icon: <FaGithub />,
+          },
+          {
+            href: "https://www.linkedin.com/in/sathwika-acharya-ijjub13",
+            icon: <FaLinkedin />,
+          },
+          {
+            href: "https://www.instagram.com/_7_.wik._",
+            icon: <FaInstagram />,
+          },
+        ].map(({ href, icon }, index) => (
+          <motion.a
+            key={index}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 5}}
+            transition={{ duration: 0.3 }}
+            style={{ margin: "0 10px" }}
+          >
+            {icon}
+          </motion.a>
+        ))}
+      </motion.div>
+    
+      <motion.div
+        className="hamburger"
+        onClick={toggleMenu}
+        whileHover={{ scale: 1.2 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        {isMenuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
+      </motion.div>
+    </motion.header>
+
   );
 }
 

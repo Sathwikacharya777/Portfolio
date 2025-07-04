@@ -107,7 +107,7 @@
 
 .skill-box {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 50%;
   padding: 20px;
   text-decoration: none;
   display: flex;
@@ -242,23 +242,43 @@
 }
 
 @media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+  .skills-section {
+    padding: 40px 20px;
+    min-height: 60vh; /* Ensures visibility on refresh */
+    overflow: visible;
   }
 
-  .skills-section h2 {
+  .skills-heading {
     font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
 
   .skill-box {
-    width: 100%;
-    height: auto;
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
 
-  .about-heading {
-    font-size: 2rem;
-    margin-top: 40px;
-    margin-bottom: 30px;
+  .skill-icon {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+  }
+
+  .skill-name {
+    font-size: 1rem;
   }
 }
+
+
