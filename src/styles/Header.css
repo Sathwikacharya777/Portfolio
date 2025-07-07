@@ -66,8 +66,8 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 60%;
-    height: 70vh;
+    width: 75%;
+    height: 60vh;
     background-color: #110556;
     flex-direction: column;
     justify-content: center;
