@@ -66,8 +66,29 @@ const scaleVariant = {
   },
 };
 
+const certificationGridVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const certificationCardVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+
 function Hero() {
   const experience = useSelector((state) => state.experience);
+  const certifications = useSelector((state) => state.certification.data);
 
   return (
     <>
@@ -245,9 +266,19 @@ function Hero() {
                       <motion.img
                         src={item.logo}
                         alt={item.company}
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        whileHover={{
+                          scale: 1.1,
+                          rotate: 2,
+                          boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
+                          transition: { duration: 0.3, ease: "easeInOut" }
+                        }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        style={{ borderRadius: "12px", cursor: "pointer" }}
                       />
+
                     </motion.div>
                   </motion.div>
               
@@ -292,6 +323,61 @@ function Hero() {
           ))}
         </motion.div>
       </section>
+      <section className="certification-section">
+      <motion.h2
+        className="certification-heading"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        My Certifications
+      </motion.h2>
+
+      <motion.div
+        className="certification-grid"
+        variants={certificationGridVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {certifications.map((cert, index) => (
+          <motion.a
+            key={cert.id}
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cert-card"
+            variants={certificationCardVariants}
+            whileHover={{
+              scale: 1.05,
+              rotate: [0, 1, -1, 0],
+              boxShadow: "0 12px 24px rgba(0,0,0,0.2)",
+              transition: { duration: 0.4 },
+            }}
+          >
+            <motion.div
+              className="cert-circle"
+              animate={{
+                y: [0, -5, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <img src={cert.image} alt={cert.title} />
+            </motion.div>
+            <div className="cert-info">
+              <p className="cert-number">--0{index + 1}--</p>
+              <h4 className="cert-title">— TITLE —</h4>
+              <p className="cert-desc">{cert.title}</p>
+            </div>
+          </motion.a>
+        ))}
+      </motion.div>
+    </section>
 
     </>
   );

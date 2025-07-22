@@ -6,7 +6,7 @@ const TypedIntro = () => {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ["Web Developer", "Web Designer"],
+      strings: ["Web Developer", "Web Designer","Data Analyst"],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true,

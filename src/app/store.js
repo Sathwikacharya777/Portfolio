@@ -6,6 +6,7 @@ import educationReducer from '../features/education/educationSlice';
 import projectsReducer from '../features/projects/projectsSlice';
 import blogsReducer from '../features/blogs/blogsSlice'; 
 import experienceReducer from '../features/experience/experienceSlice'; 
+import certificationReducer from '../features/certification/certificationSlice';
 
 export const store = configureStore({
   reducer: {
@@ -15,5 +16,6 @@ export const store = configureStore({
     projects: projectsReducer,
     blogs: blogsReducer, 
     experience: experienceReducer,
+    certification: certificationReducer
   },
 });
