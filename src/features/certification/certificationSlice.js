@@ -2,31 +2,37 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
    data: [
-    {
-      id: 1,
-      title: 'GenAI Powered Data Analytics',
-      image: '/assets/tataiq.png',
-      link: 'https://drive.google.com/file/d/1e9X0QaVHdXPjBnh3JIaGhHh75OfhT4HT/view?usp=drive_link',
-    },
-    {
-      id: 2,
-      title: 'Data	Visualisation:	Empowering	Business with	Effective	Insights',
-      image: '/assets/tataiq.png',
-      link: 'https://drive.google.com/file/d/16K_4y6HpvC6PSarO4t_-e3MyeloESb4F/view?usp=drive_link',
-    },
-    {
-      id: 3,
-      title: 'Flutter For Beginners Course',
-      image: '/assets/gr.png',
-      link: 'https://drive.google.com/file/d/1EQ71T7M1_hIUOp6Wd0reUhoyYX_Npp55/view?usp=drive_link',
-    },
-    {
-      id: 4,
-      title: 'Quantitative	Research	Job	Simulation',
-      image: '/assets/jpm.webp',
-      link: 'https://drive.google.com/file/d/1XUF8aFPtLoOVqusdc_d-SCOataVL5iu7/view?usp=drive_link',
-    }
-  ],
+  {
+    id: 1,
+    title: 'GenAI Powered Data Analytics',
+    image: '/assets/tataiq.png',
+    link: 'https://drive.google.com/file/d/1e9X0QaVHdXPjBnh3JIaGhHh75OfhT4HT/view?usp=drive_link',
+  },
+  {
+    id: 2,
+    title: 'Software Engineering Job Simulation',
+    image: '/assets/acc.webp',
+    link: 'https://drive.google.com/file/d/1vzf-qnE3h4BUOZ0iVT5ouIgsWJQ5K384/view?usp=drive_link',
+  },
+  {
+    id: 3,
+    title: 'Quantitative Research Job Simulation',
+    image: '/assets/jpm.webp',
+    link: 'https://drive.google.com/file/d/1XUF8aFPtLoOVqusdc_d-SCOataVL5iu7/view?usp=drive_link',
+  },
+  {
+    id: 4,
+    title: 'Data Visualisation: Empowering Business with Effective Insights',
+    image: '/assets/tataiq.png',
+    link: 'https://drive.google.com/file/d/16K_4y6HpvC6PSarO4t_-e3MyeloESb4F/view?usp=drive_link',
+  },
+  {
+    id: 5,
+    title: 'Flutter For Beginners Course',
+    image: '/assets/gr.png',
+    link: 'https://drive.google.com/file/d/1EQ71T7M1_hIUOp6Wd0reUhoyYX_Npp55/view?usp=drive_link',
+  }
+],
 };
 
 const certificationSlice = createSlice({
