@@ -34,6 +34,12 @@ const initialState = {
   },
   {
     id: 6,
+    title: 'Software Engineering Job Simulation',
+    image: '/assets/EA.webp',
+    link: 'https://drive.google.com/file/d/1BkzcbkrIwn4y1PSmtx08-Pt3DKH4oI_u/view?usp=drive_link',
+  },
+  {
+    id: 7,
     title: 'Flutter For Beginners Course',
     image: '/assets/gr.png',
     link: 'https://drive.google.com/file/d/1EQ71T7M1_hIUOp6Wd0reUhoyYX_Npp55/view?usp=drive_link',
