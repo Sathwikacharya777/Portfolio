@@ -22,12 +22,18 @@ const initialState = {
   },
   {
     id: 4,
+    title: 'Data Analytics Job Simulation',
+    image: '/assets/deloite.jpg',
+    link: 'https://drive.google.com/file/d/1T4c2QQtm-xspQtOO48ekOsdb2j9aSAtF/view?usp=drive_link',
+  },
+  {
+    id: 5,
     title: 'Data Visualisation: Empowering Business with Effective Insights',
     image: '/assets/tataiq.png',
     link: 'https://drive.google.com/file/d/16K_4y6HpvC6PSarO4t_-e3MyeloESb4F/view?usp=drive_link',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Flutter For Beginners Course',
     image: '/assets/gr.png',
     link: 'https://drive.google.com/file/d/1EQ71T7M1_hIUOp6Wd0reUhoyYX_Npp55/view?usp=drive_link',

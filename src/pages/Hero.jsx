@@ -266,17 +266,8 @@ function Hero() {
                       <motion.img
                         src={item.logo}
                         alt={item.company}
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        whileHover={{
-                          scale: 1.1,
-                          rotate: 2,
-                          boxShadow: "0 12px 24px rgba(0, 0, 0, 0.2)",
-                          transition: { duration: 0.3, ease: "easeInOut" }
-                        }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        style={{ borderRadius: "12px", cursor: "pointer" }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ duration: 0.3 }}
                       />
 
                     </motion.div>
@@ -322,9 +313,9 @@ function Hero() {
             </motion.div>
           ))}
         </motion.div>
-      </section>
-      <section className="certification-section">
-      <motion.h2
+    </section>
+    <section className="certification-section">
+      <motion.h1
         className="certification-heading"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -332,7 +323,15 @@ function Hero() {
         viewport={{ once: true }}
       >
         My Certifications
-      </motion.h2>
+      </motion.h1>
+      <motion.h2
+          className="work-heading"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+          What I've Learned So Far
+        </motion.h2>
 
       <motion.div
         className="certification-grid"
@@ -358,17 +357,36 @@ function Hero() {
           >
             <motion.div
               className="cert-circle"
-              animate={{
-                y: [0, -5, 0],
+              whileHover={{
+                y: [0, -8, 0],     // Smooth floating
+                rotate: [0, 10, -10, 10, 0], // clockwise ➝ anticlockwise ➝ clockwise ➝ reset // Clockwise twist and reset
+                scale: 1.1,        // Slight zoom
+                zIndex: 10,
+                transition: {
+                  y: {
+                    duration: 1.5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  },
+                  rotate: {
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  },
+                  scale: {
+                    duration: 0.3,
+                    ease: "easeOut",
+                  },
+                },
               }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
+              initial={{ y: 0, rotate: 0, scale: 1 }} // Start position
             >
               <img src={cert.image} alt={cert.title} />
             </motion.div>
+
+
+
+
             <div className="cert-info">
               <p className="cert-number">--0{index + 1}--</p>
               <h4 className="cert-title">— TITLE —</h4>
