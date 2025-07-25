@@ -40,12 +40,18 @@ const initialState = {
   },
   {
     id: 7,
+    title: 'Software	Engineering	Job	Simulation',
+    image: '/assets/wells.jpg',
+    link: 'https://drive.google.com/file/d/1kUYVT7E-w8W9ZOhGae9sYgsjEkylwb-F/view?usp=drive_link',
+  },
+  {
+    id: 8,
     title: 'Data Visualisation: Empowering Business with Effective Insights',
     image: '/assets/tataiq.png',
     link: 'https://drive.google.com/file/d/16K_4y6HpvC6PSarO4t_-e3MyeloESb4F/view?usp=drive_link',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Flutter For Beginners Course',
     image: '/assets/gr.png',
     link: 'https://drive.google.com/file/d/1EQ71T7M1_hIUOp6Wd0reUhoyYX_Npp55/view?usp=drive_link',
