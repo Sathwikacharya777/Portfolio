@@ -22,7 +22,7 @@ function Header() {
     >
       <div className="logo">
         <motion.img
-          src="/assets/logo.png"
+          src="/assets/logoo.png"
           alt="Logo"
           className="logo-img"
           initial={{ opacity: 0 }}
