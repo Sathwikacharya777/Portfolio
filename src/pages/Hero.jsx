@@ -214,7 +214,7 @@ function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2.5 }}
         >
-          Work Experience.
+          Internship Experience.
         </motion.h1>
 
         <motion.h2
