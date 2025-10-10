@@ -81,7 +81,7 @@ function About() {
           </p>
 
           <motion.a
-            href="https://drive.google.com/file/d/1LDFfUnM9m5C7L03ckWzpZB4alCi77eeg/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1wnN6CDgF91nQBrGX7DQwYAPaQOb30N9x/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="download-cv-btn"

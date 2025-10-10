@@ -6,7 +6,7 @@ const initialState = [
     id: 1,
     role: "React Developer Intern",
     company: "Chipsy Information Technology Services Pvt Ltd.",
-    period: "June 2025 - OnGoing",
+    period: "June 2025 - Aug 2025",
     logo: "/assets/chipsy.jpeg",
     link: "https://drive.google.com/file/d/1eCAbvAKI8QhS3vlvl0qlkmmFzQD9_DBQ/view?usp=drive_link"
   },
