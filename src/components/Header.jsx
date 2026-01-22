@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
-import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -66,6 +66,10 @@ function Header() {
               icon: <FaEnvelope />,
             },
             {
+              href: "https://wa.me/919686235365?text=Hello%20Sathwik,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.",
+              icon: <FaWhatsapp />,
+            },
+            {
               href: "https://github.com/Sathwikacharya777",
               icon: <FaGithub />,
             },
@@ -83,7 +87,7 @@ function Header() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, rotate: 5, color: "#ddd" }}
+              whileHover={{ scale: 1.2, rotate: 5, color: "#262626ff" }}
               transition={{ duration: 0.3 }}
               style={{ margin: "0 10px" }}
             >
@@ -104,6 +108,10 @@ function Header() {
           {
             href: "mailto:sathwikacharyaofficial@gmail.com",
             icon: <FaEnvelope />,
+          },
+          {
+            href: "https://wa.me/919686235365?text=Hello%20Sathwik,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.",
+            icon: <FaWhatsapp />,
           },
           {
             href: "https://github.com/Sathwikacharya777",

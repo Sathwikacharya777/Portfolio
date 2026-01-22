@@ -72,11 +72,15 @@ function Footer() {
           </p>
           <br />
           <h3>Find Me On</h3>
-          <div className="footer-social-links">
+          <div className="footer-social-links"> 
             {[
               {
                 href: "mailto:sathwikacharyaofficial@gmail.com?subject=Hello%20Sathwik&body=I%20saw%20your%20portfolio%20and%20wanted%20to%20connect.",
                 icon: "fa fa-envelope",
+              },
+              {
+                href: "https://wa.me/919686235365?text=Hello%20Sathwik,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.",
+                icon: "fab fa-whatsapp",
               },
               {
                 href: "https://www.linkedin.com/in/sathwika-acharya-ijjub13",
@@ -96,7 +100,7 @@ function Footer() {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                whileHover={{ scale: 1.2, color: "#ddd", rotate: 5 }}
+                whileHover={{ scale: 1.2, color: "#212121ff", rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
                 <i className={icon}></i>

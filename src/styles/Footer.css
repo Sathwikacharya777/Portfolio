@@ -1,5 +1,10 @@
 .footer {
-  background-color: #110556;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #bbbef5 50%,
+    #ae9afc 100%
+  );
   color: #ffffff;
   padding: 30px 20px 10px;
 }
@@ -23,6 +28,11 @@
 
 .footer-column h3 {
   margin-bottom: 10px;
+  color: #000000;
+}
+
+.footer-column p {
+  color: #000000;
 }
 
 .footer-column ul {
@@ -35,18 +45,18 @@
 }
 
 .footer-column a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 .footer-column a:hover {
-  color: #929090;
+  color: #000000;
   text-decoration: none;
 }
 
 .footer-divider {
   width: 1px;
-  background-color: #ffffff;
+  background-color: #000000;
   height: 100%;
   margin: 0 20px;
 }
@@ -60,20 +70,20 @@
 
 .footer-social-links a {
   font-size: 24px;
-  color: #ccc5c5;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-social-links a:hover {
-  color: #3369a3;
+  color: #000000;
 }
 
 .footer-bottom {
   text-align: center;
   font-size: 14px;
   margin-top: 20px;
-  color: #aaa;
+  color: #000000;
 }
 
 /* ✅ Responsive Breakpoints */

@@ -6,6 +6,7 @@ const initialState = [
     title: "Tourism Management System",
     category: "Fullstack",
     image: "/assets/bg_4.jpg", // Ensure this file exists in /public/assets
+    Builtfor: "Travel agencies, tour operators, and customers for seamless booking and management",
     link: "https://github.com/Sathwikacharya777/Tourism_Management_System"
   },
   {
@@ -19,18 +20,21 @@ const initialState = [
     title: "Footwear Zone",
     category: "Fullstack",
     image: "/assets/bg3.jpg",
+    Builtfor: "Online footwear retailers and customers for smooth shopping experience",
     link: "https://github.com/Sathwikacharya777/Footwear_Zone-"
   },
   {
     title: "Panto Furniture Landing",
     category: "Frontend",
     image: "/assets/landing.jpg",
+    Builtfor: "Furniture brands and businesses to showcase products and attract customers",
     link: "https://panto-furniture-three.vercel.app"
   },
   {
     title: "E-commerce Website",
     category: "Frontend",
     image: "/assets/bg2.webp",
+    Builtfor: "Small businesses and startups for online product showcasing and sales",
     link: "https://github.com/Sathwikacharya777/Ecommerce_Frontend_React"
   }
 ];

@@ -214,7 +214,7 @@ function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2.5 }}
         >
-          Internship Experience.
+          Internship and Work Experience.
         </motion.h1>
 
         <motion.h2
@@ -233,7 +233,7 @@ function Hero() {
           whileInView="visible"
           whileHover={{
             scale: 1.01,
-            boxShadow: "0 0 30px rgba(0, 0, 0, 0.1)",
+            // boxShadow: "0 0 30px rgba(0, 0, 0, 0.1)",
           }}
           transition={{ type: "spring", stiffness: 100 }}
           viewport={{ once: true, amount: 0.2 }}
