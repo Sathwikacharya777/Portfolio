@@ -69,6 +69,7 @@ function Projects() {
             <div className="project-info">
               <h3>{project.title}</h3>
               <p>{project.category}</p>
+              <p>{project.Builtfor}</p>
             </div>
           </motion.a>
         ))}

@@ -71,17 +71,17 @@ function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p>
-            I'm <strong>{name}</strong>, a passionate and creative web developer who loves turning ideas into real-world, functional websites and applications. My core strength lies in designing clean, responsive user interfaces using React and CSS while ensuring a smooth user experience.
+            I'm a <strong>{name}</strong> a full-stack developer who helps businesses, startups, and individuals turn their ideas into fully functional, high-performance web applications. I specialize in building clean, responsive, and user-friendly interfaces using React, Tailwind CSS, and modern JavaScript frameworks.
           </p>
           <p>
-            In addition to frontend development, I’ve also worked on backend technologies like Node.js and Python, including real-world projects such as a Pneumonia Detection AI system and a full-fledged e-commerce platform. I enjoy solving problems, writing efficient code, and learning new technologies to stay ahead in the ever-evolving tech space.
+            Along with frontend development, I also work on backend technologies like Node.js and Python, allowing me to deliver complete end-to-end solutions from UI design to server-side logic and API integrations. I’ve worked on real-world projects including an AI-based pneumonia detection system and a fully functional e-commerce platform.
           </p>
           <p>
-             I’m currently completing my Master’s in Computer Applications while gaining real-time experience through internships. I strive to deliver professional-quality results, whether it's a dynamic portfolio website or a data-driven medical application, and I'm excited to contribute to meaningful projects in the tech industry.
+             Whether you need a fast landing page, a portfolio site, or a complete web application, I focus on writing efficient code, solving real problems, and delivering results that match your goals not just the requirements.
           </p>
 
           <motion.a
-            href="https://drive.google.com/file/d/1wnN6CDgF91nQBrGX7DQwYAPaQOb30N9x/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1Y8sCByUp8xU3HjbLLyUFNHHQFXr5Sb7M/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="download-cv-btn"

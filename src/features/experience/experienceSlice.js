@@ -4,6 +4,14 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = [
   {
     id: 1,
+    role: "Software Engineer Trainee",
+    company: "Arisecraft Technologies",
+    period: "Oct 2025 - Present",
+    logo: "/assets/act.jpeg",
+    link: ""
+  },
+  {
+    id: 2,
     role: "React Developer Intern",
     company: "Chipsy Information Technology Services Pvt Ltd.",
     period: "June 2025 - Aug 2025",
@@ -11,7 +19,7 @@ const initialState = [
     link: "https://drive.google.com/file/d/1eCAbvAKI8QhS3vlvl0qlkmmFzQD9_DBQ/view?usp=drive_link"
   },
   {
-    id: 2,
+    id: 3,
     role: "Python Programming Intern",
     company: "CodSoft",
     period: "Jan 2025 - Feb 2025",

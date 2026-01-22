@@ -12,6 +12,7 @@ const initialState = [
     title: "Pneumonia Detection",
     category: "Deep Learning",
     image: "/assets/bg5.jpg",
+    Builtfor: "Medical professionals + early diagnosis support",
     link: ""
   },
   {
@@ -24,7 +25,7 @@ const initialState = [
     title: "Panto Furniture Landing",
     category: "Frontend",
     image: "/assets/landing.jpg",
-    link: "https://sathwikacharya777.github.io/panto-furniture-landing/"
+    link: "https://panto-furniture-three.vercel.app"
   },
   {
     title: "E-commerce Website",

@@ -123,7 +123,7 @@ function Hero() {
               whileHover={{ scale: 1.10, backgroundColor: "#dc3b71" }}
               transition={{ duration: 0.3 }}
             >
-              CONTACT <span className="arrow">→</span>
+              LET’S WORK TOGATHER <span className="arrow">→</span>
             </motion.a>
           </div>
         </motion.div>
